@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campos_Obrigatorios</fullName>
+    <active>true</active>
+    <description>Campos obrigatórios para criação dos registros</description>
+    <errorConditionFormula>ISPICKVAL( Type,&apos;null&apos;) ||
+ISBLANK(  NumberOfEmployees ) ||
+ISBLANK(  Name )</errorConditionFormula>
+    <errorMessage>Os campos Account name, Employees e Type são obrigatórios, devem ser preenchidos.</errorMessage>
+</ValidationRule>
